@@ -1,0 +1,93 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.dropzone {
+  text-align: center;
+  padding: 30px;
+  border: 3px dashed #eeeeee;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.selected-file-wrapper {
+  text-align: center;
+}
+
+.selected-file {
+  color: #000;
+  font-weight: bold;
+}
+
+.control-div {
+  position: fixed;
+  padding-top: 50px;
+  top: 0px;
+  left: 10px;
+  width: 80px;
+  height: 100vh;
+  /* border-left: solid 1px #000; */
+  /* border-right: solid 1px #000; */
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coucou {
+  height: 100vh;
+}
+
+.coucou-new {
+  width: 400px;
+  z-index: 1000; 
+  position: fixed; 
+  margin-left: 140px;
+  margin-top: 50px;
+  top: 0px;
+}
+
+.obit-controls-gizmo {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 1000;
+  background-color: #FFF0;
+  border-radius: 100%;
+  transition: background-color .15s  linear;
+  cursor: pointer;
+}
+
+.obit-controls-gizmo.dragging, 
+.obit-controls-gizmo:hover {
+  background-color: #FFF3;
+}
+
+.obit-controls-gizmo.inactive {
+  pointer-events: none;
+  background-color: #FFF0  !important;
+}
+
+.control-list {
+  position: fixed;
+  padding-top: 50px;
+  top: 0px;
+  right: 10px;
+  width: 120px;
+  height: 100vh;
+  /* border-left: solid 1px #000; */
+  /* border-right: solid 1px #000; */
+  z-index: 10000;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 10px; */
+}
+
+.image-panel {
+  padding-left: 120px;
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+}
